@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.end("CI/CD Working Successfully íº€");
+  res.send("AUTO DEPLOY SUCCESS ðŸš€ Version 2");
 });
 
 server.listen(3000, () => {
