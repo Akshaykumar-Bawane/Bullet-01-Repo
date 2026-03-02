@@ -1,9 +1,10 @@
-const http = require('http');
+const express = require('express');
+const app = express();
 
-const server = http.createServer((req, res) => {
+app.get('/', (req, res) => {
   res.send("AUTO CD SUCCESSFULLY WORKING 🔥🔥🔥");
 });
 
 app.listen(3000, '0.0.0.0', () => {
-  console.log("Server running on 0.0.0.0");
+  console.log("Server running on port 3000");
 });
