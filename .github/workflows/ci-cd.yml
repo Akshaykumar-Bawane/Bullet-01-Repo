@@ -43,10 +43,9 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            script: |
-              docker pull dockerdaku877/bullet01:latest
-              docker stop bullet01 || true
-              docker rm bullet01 || true
-              docker run -d -p 8080:3000 --name bullet01 dockerdaku877/bullet01:latest
-              sleep 5
-              docker ps
+            docker pull dockerdaku877/bullet01:latest
+            docker stop bullet01 || true
+            docker rm bullet01 || true
+            docker run -d -p 8080:3000 --name bullet01 dockerdaku877/bullet01:latest
+            sleep 5
+            docker ps
