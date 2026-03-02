@@ -35,7 +35,7 @@ jobs:
       - name: Push Docker Image  
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/bullet01:latest
-
+ 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.10
         with:
@@ -46,4 +46,4 @@ jobs:
             docker pull dockerdaku877/bullet01:latest
             docker stop bullet01 || true
             docker rm bullet01 || true
-            docker run -d --name bullet01 -p 80:3000 dockerdaku877/bullet01:latest
+            docker run -d -p 80:3000 --name bullet01 dockerdaku877/bullet01:latest
