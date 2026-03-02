@@ -4,13 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-  "test": "jest"
-},
+    "test": "jest"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "devDependencies": {
-    "jest": "^30.2.0"
+  "dependencies": {
+    "express": "^4.22.1"
   }
 }
