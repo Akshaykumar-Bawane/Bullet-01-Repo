@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Run Tests
-        run: npx jest
+        run: npm test
 
       - name: Build Docker Image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/bullet01:latest .
