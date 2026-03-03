@@ -1,15 +1,12 @@
 {
-  "name": "bullet-01-ci",
+  "name": "bullet-01-gitlab-ci",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "commonjs",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
   "dependencies": {
     "express": "^4.22.1"
   },

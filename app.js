@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send("AUTO CD SUCCESSFULLY WORKING 🔥🔥🔥");
+  res.send("GITLAB CI-CD SUCCESSFULLY WORKING 🚀");
 });
 
 app.listen(3000, '0.0.0.0', () => {
